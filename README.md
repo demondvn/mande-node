@@ -6,6 +6,6 @@
         docker run -d --restart unless-stopped -v /mnt/blockstore/mande:/root/.mande-chaind --name mande mande
 ## Check
         curl http://localhost:26657/status sync_info "catching_up": false
-    Once "catching_up" is false, the sync is complete.
+. Once "catching_up" is false, the sync is complete.
 ## More
     [docs view more][https://github.com/mande-labs/testnet-1]
