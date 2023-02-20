@@ -7,6 +7,6 @@ SEEDS="cd3e4f5b7f5680bbd86a96b38bc122aa46668399@34.171.132.212:26656"
 PEERS="ee8a1b98e931e81d32c52f0b489fa22b52778d7c@34.171.132.212:26656,6780b2648bd2eb6adca2ca92a03a25b216d4f36b@34.170.16.69:26656"
 sed -i 's|^seeds *=.*|seeds = "'$SEEDS'"|; s|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.mande-chaind/config/config.toml
 
-sed -i 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.005mand"|g' $HOME/.andromedad/config/app.toml
+sed -i 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.005mand"|g' $HOME/.mande-chaind/config/app.toml
 
 mande-chaind start
