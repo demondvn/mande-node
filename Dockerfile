@@ -9,7 +9,7 @@ RUN apt-get update && \
 WORKDIR /app
 
 # Clone the Andromeda Core repository
-RUN wget https://github.com/mande-labs/testnet-1/blob/main/mande-chaind -O /usr/local/bin/mande-chaind && \
+RUN wget https://github.com/mande-labs/testnet-1/raw/main/mande-chaind -O /usr/local/bin/mande-chaind && \
   chmod +x /usr/local/bin/mande-chaind
 
 
