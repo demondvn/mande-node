@@ -9,9 +9,8 @@ RUN apt-get update && \
 WORKDIR /app
 
 # Clone the Andromeda Core repository
-RUN git clone https://github.com/mande-labs/testnet-1.git && \
-  cp testnet-1/binaries/linux_arm64/mande-chaind /usr/local/bin/mande-chaind && \
-  chmod +x mande-chaind
+RUN wget https://github.com/mande-labs/testnet-1/blob/main/mande-chaind -O /usr/local/bin/mande-chaind && \
+  chmod +x /usr/local/bin/mande-chaind
 
 
 # Build the project
